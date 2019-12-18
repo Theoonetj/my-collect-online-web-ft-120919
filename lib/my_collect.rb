@@ -14,6 +14,6 @@ hello(array) do |name|
 end
 
 collection = ['ruby', 'javascript', 'python', 'objective-c']
-my_collect(collection) do |lang|
+hello(collection) do |lang|
   lang.upcase
 end
