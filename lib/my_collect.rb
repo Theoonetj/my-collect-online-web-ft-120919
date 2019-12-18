@@ -7,3 +7,8 @@ def hello(array)
   end
   collection
 end
+
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+hello(array) do |name|
+  name.split(" ").first
+end
