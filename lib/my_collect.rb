@@ -8,10 +8,7 @@ def hello(array)
   collection
 end
 
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-hello(array) do |name|
-  name.split(" ").first
-end
+
 
 collection = ['ruby', 'javascript', 'python', 'objective-c']
 hello(collection) do |lang|
