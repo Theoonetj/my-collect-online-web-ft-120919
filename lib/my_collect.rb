@@ -1,4 +1,4 @@
-def hello(array)
+def my_collect(array)
   i = 0
   collection = []
   while i < array.length
@@ -8,9 +8,12 @@ def hello(array)
   collection
 end
 
-
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+my_collect(array) do |name|
+  name.split(" ").first
+end
 
 collection = ['ruby', 'javascript', 'python', 'objective-c']
-hello(collection) do |lang|
+my_collect(collection) do |lang|
   lang.upcase
 end
