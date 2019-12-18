@@ -1,17 +1,9 @@
-def myCollectLab(array)
-  
-  i = 0 
-  collectNames = []
-  
-  while i < array.length 
-  collectNames << yield([i])
-  i = i + 1 
-end 
-collectNames
-end
-
-
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-myCollectLab(array) do |name|
-  name.split(" ").first
+def hello(array)
+  i = 0
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
+    i += 1
+  end
+  collection
 end
