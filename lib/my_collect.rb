@@ -9,7 +9,7 @@ def myCollectLab(array)
 end 
 collectNames
 end
-end
+
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 myCollectLab(array) do |name|
