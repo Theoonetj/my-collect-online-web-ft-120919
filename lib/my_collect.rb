@@ -1,2 +1,2 @@
-def myCollectLab
+def myCollectLab(array)
 
